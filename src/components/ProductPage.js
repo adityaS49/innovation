@@ -19,7 +19,7 @@ const ProductPage = () => {
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredData, setFilteredData] = useState([]);
-  const [priceRange, setPriceRange] = useState({ min: 0 , max: Infinity });
+  const [priceRange, setPriceRange] = useState({ min: 0 , max: 0 });
   const [cart, setCart] = useState([]);
   useEffect(() => {
     const fetchMobiles = async () => {
@@ -71,7 +71,7 @@ const ProductPage = () => {
             Search
           </button>
         </div>
-        <div className="flex gap-4">
+        <div className="flex flex-col lg:flex-row gap-4">
           <input
           type="range"
           min="0"

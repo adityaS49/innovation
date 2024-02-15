@@ -1,11 +1,10 @@
-
-import React from 'react';
-import LoginForm from './LoginForm';
+import React from "react";
+import LoginForm from "./LoginForm";
+import "./LoginForm.css";
 const Home = () => {
-
   return (
-    <div>
-      <LoginForm/>
+    <div className="loginPage">
+      <LoginForm />
     </div>
   );
 };
